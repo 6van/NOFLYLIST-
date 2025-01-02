@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOFLYLIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="title">
+        NOFLYLIST
+    </div>
+    <div class="subtitle">
+        MEDIA.
+    </div>
+
+    <div class="container">
+        <!-- Different links for each door -->
+        <div class="door" id="door1" onclick="openLink(1)">
+            <p>1</p>
+        </div>
+        <div class="door" id="door2" onclick="openLink(2)">
+            <p>2</p>
+        </div>
+        <div class="door" id="door3" onclick="openLink(3)">
+            <p>3</p>
+        </div>
+    </div>
+
+    <div class="about">
+        <h2>ABOUT</h2>
+        <p>NOFLYLIST RECORDS & NFL MEDIA IS AN INDIE LABEL AND MEDIA AGENCY RUN BY A GROUP OF FRIENDS, FOUNDED IN 2022. 
+        THOUGH STILL IN ITS EARLY STAGES, NOFLYLIST HAS A VISION OF TRANSCENDING ITS ROOTS AS A RECORD LABEL. THE AGENCY AIMS TO SUPPORT 
+        AND SHOWCASE A DIVERSE ARRAY OF ARTISTS AND CREATORS, PUSHING THE BOUNDARIES OF GENRE AND FORM. THEIR ROSTER, THOUGH EMERGING, 
+        PROMISES A RICH TAPESTRY OF AVANT-GARDE AND INDIE SOUNDS, CAPTURING THE ETHOS OF INNOVATION AND COMMUNITY.</p>
+    </div>
+
+    <div class="submission">
+        <h2>SUBMIT</h2>
+        <input type="text" id="mediaLink" placeholder="Enter YouTube or Spotify link" />
+        <button onclick="submitLink()">Submit</button>
+    </div>
+
+    <div class="rules">
+        <h2>RULES</h2>
+        <p><strong>Rules:</strong><br>
+            - Please submit appropriate content with a few exceptions.<br>
+            - Only YouTube or Spotify links are allowed.<br>
+            - Submissions will be placed randomly in any of the 1, 2, or 3 doors.<br>
+            - Content will be featured roulette style for discovery.</p>
+    </div>
+
+    <!-- Instagram Popup -->
+    <div id="popup-instagram" class="popup">
+        <div class="close-btn" onclick="this.parentElement.style.display='none'">&times;</div>
+        <p>Follow me on Instagram 📸: <a href="https://www.instagram.com/evanamargiela/" target="_blank">evanamargiela</a></p>
+    </div>
+
+    <!-- Coffee Support Popup -->
+    <div id="popup-coffee" class="popup">
+        <div class="close-btn" onclick="this.parentElement.style.display='none'">&times;</div>
+        <p><a href="https://buymeacoffee.com/6van" target="_blank">Buy me a coffee</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
