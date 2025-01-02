@@ -115,6 +115,7 @@
         .popup {
             position: fixed;
             bottom: 20px;
+            right: 20px;
             width: 250px;
             background-color: rgba(51, 51, 51, 0.9);
             color: #fff;
@@ -137,14 +138,6 @@
             right: 10px;
             font-size: 1.5rem;
             cursor: pointer;
-        }
-        #popup-instagram {
-            right: 20px;
-            display: block;
-        }
-        #popup-coffee {
-            left: 20px;
-            display: block;
         }
 
         /* Mobile Optimization */
@@ -248,16 +241,11 @@
         </p>
     </div>
 
-    <!-- Instagram Popup -->
-    <div id="popup-instagram" class="popup">
+    <!-- Combined Popup -->
+    <div id="popup-combined" class="popup">
         <div class="close-btn" onclick="this.parentElement.style.display='none'">&times;</div>
         <p>Follow me on Instagram 📸: <a href="https://www.instagram.com/evanamargiela/" target="_blank">evanamargiela</a></p>
-    </div>
-
-    <!-- Coffee Support Popup -->
-    <div id="popup-coffee" class="popup">
-        <div class="close-btn" onclick="this.parentElement.style.display='none'">&times;</div>
-        <p><a href="https://buymeacoffee.com/6van" target="_blank">Buy me a coffee</a></p>
+        <p>Buy me a coffee ☕: <a href="https://buymeacoffee.com/6van" target="_blank">Support here</a></p>
     </div>
 
     <script>
